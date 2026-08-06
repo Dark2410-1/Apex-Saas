@@ -64,24 +64,22 @@ export const PricingSection: React.FC = () => {
             const price = isYearly ? tier.yearlyPrice : tier.monthlyPrice;
 
             return (
-              <GlassCard
-                key={tier.id}
-                className={`p-8 flex flex-col justify-between relative ${
-                  tier.popular
-                    ? 'border-violet-500/50 shadow-2xl shadow-violet-600/20 bg-slate-900/90 ring-1 ring-violet-500/30 lg:-translate-y-2'
-                    : ''
-                }`}
-                glowColor={tier.popular ? 'violet' : 'cyan'}
-              >
-                {/* Popular Pill Header */}
+              <div key={tier.id} className="relative flex">
+                {/* Floating Popular Badge (rendered outside the card so overflow-hidden cannot clip it) */}
                 {tier.popular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-extrabold text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 uppercase tracking-wider">
-                      <Sparkles className="w-3.5 h-3.5" /> Most Popular Enterprise Choice
-                    </span>
-                  </div>
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 z-20 whitespace-nowrap bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-extrabold text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 uppercase tracking-wider">
+                    <Sparkles className="w-3.5 h-3.5" /> Most Popular Enterprise Choice
+                  </span>
                 )}
 
+                <GlassCard
+                  className={`p-8 flex flex-col justify-between w-full h-full ${
+                    tier.popular
+                      ? 'border-violet-500/50 shadow-2xl shadow-violet-600/20 bg-slate-900/90 ring-1 ring-violet-500/30 lg:-translate-y-2'
+                      : ''
+                  }`}
+                  glowColor={tier.popular ? 'violet' : 'cyan'}
+                >
                 <div>
                   {/* Tier Title & Description */}
                   <div className="mb-6">
@@ -126,6 +124,7 @@ export const PricingSection: React.FC = () => {
                   </Button>
                 </div>
               </GlassCard>
+              </div>
             );
           })}
         </div>
