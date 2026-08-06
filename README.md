@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# 🚀 Apex SaaS — Nexus AI Enterprise
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Apex SaaS — bu sun'iy intellekt (AI) xizmatlari, avtonom agentlar va moslashuvchan pricing (narxlash) tizimiga ega zamonaviy SaaS platformasi. Loyiha tezkor va xavfsiz web-ilova sifatida qurilgan.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Texnologiyalar (Tech Stack)
 
-## React Compiler
+* **Frontend:** [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Linter & Code Quality:** [Oxlint](https://oxc.rs/)
+* **Styling:** CSS / Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Asosiy Imkoniyatlar (Features)
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* ⚡ **High-Performance AI Workflows:** Tezkor va past latensiyaga ega AI funksionalligi.
+* 💳 **Dynamic Pricing Plans:** * **Developer Starter:** Yakkaxon dasturchilar uchun responsive tariflar.
+  * **Enterprise Pro:** Yil va oy bo'yicha hisob-kitob qilinuvchi eng ommabop plan.
+  * **Global Custom Scale:** Yirik korxonalar va maxsus integratsiyalar uchun yechimlar.
+* 🤖 **Autonomous Agents & API Executions:** Sub-12ms tezlik va xavfsiz shifrlangan tizim (Quantum AES-256).
+* 📱 **Modern UI/UX:** Tungi rejimga moslangan zamonaviy responsive interfeys.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🚀 Loyihani Mahalliy (Local) Kompyuterda Ishga Tushirish
+
+### 1. Repozitoriyadan nusxa olish (Clone):
+```bash
+git clone [https://github.com/Dark2410-1/Apex-Saas.git](https://github.com/Dark2410-1/Apex-Saas.git)
+cd Apex-Saas
